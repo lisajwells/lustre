@@ -63,12 +63,35 @@ add_action ('genesis_entry_content', 'lustre_add_landing_content' );
 
 function lustre_add_landing_content() {
 
-	echo '<section id="section-1"';
+	echo '<section class="content-section" id="section-1">';
 	echo '<div class="subhed-img" id="01-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/01-Lustre-Jewels.jpg"</div>';
 	echo '<div class="callout" id="01-callout">' . get_field('01_callout') . '</div>';
 	echo '<div class="section-text one-half first" id="01-text">' . get_field('01_text') . '</div>';
 	echo '<div class="one-half" id="01-jewel-img"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/01-blue-bracelet.jpg"</div>';
 	echo '</section>'; /* end section-1 */
+
+	echo '<div class="callout" id="dictionary">Lustre [luhs-ter] noun: Radiant or luminous brightness; brilliance; radiance</div>';
+
+	echo '<section class="content-section" id="section-2">';
+	echo '<div class="subhed-img" id="02-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/02-Lustre-Services.jpg"</div>';
+	echo '<div id="approach" class="one-half first"> 
+		<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-pink-ring.jpg">'.
+		get_field('02_approach').'
+		</div>';
+	echo '<div id="sourcing" class="one-half">'. 
+		get_field('02_sourcing').'
+		<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-gold-bracelet.jpg">
+		</div>';
+	echo '<div id="custom-pieces" class="one-half first">'. 
+		get_field('02_custom_pieces').'
+		<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-aqua-earrings.jpg">
+		</div>';
+	echo '<div id="events" class="one-half">'. 
+		get_field('02_events').'
+		</div>';
+	echo '</section>'; /* end section-2 */
+
+	echo '<div class="divider"></div>';
 
 
 

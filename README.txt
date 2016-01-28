@@ -21,4 +21,9 @@ SUPPORT
 Please visit http://my.studiopress.com/help/ for theme support.
 
 
-Lustre serves as a link between discerning clientele and the finest designers, jewelers, lapidaries and gemstone houses in the world.
+<h3>Events</h3>
+<p>Lustre Jewelry hosts trunk shows and salon events several times each year.  These invitation-only gatherings offer an opportunity for our clients, their friends and family, to engage with Lisa and a selection of our preferred partners to view estate jewelry, precious gemstones and modern designs.</p>
+<p>Submit your email here for more information and to be notified about future events in your area.</p>
+
+
+

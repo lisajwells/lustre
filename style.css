@@ -73,6 +73,9 @@ mauve: rgb(183, 174, 174);
 mauve-light: rgb(210, 207, 207);
 gold:  rgb(219, 204, 159);
 brown: rgb(102,  86,  59);
+
+gradient gray: #ddd;
+gradient center: #fdfdfd;
 */
 
 /*<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,600' rel='stylesheet' type='text/css'>*/
@@ -143,15 +146,13 @@ Defaults
 
 body {
 	background-color: #fff;
-	color: #333;
+	color: rgb(102,  86,  59);
 	font-family: 'Josefin Sans', sans-serif;	
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 1.625;
 }
-.page-id-7 {
-	text-align:center;
-	}
+
 a,
 button,
 input:focus,
@@ -240,7 +241,7 @@ cite {
 --------------------------------------------- */
 .center {
 	margin:auto;
-	}
+}
 h1,
 h2,
 h3,
@@ -249,7 +250,8 @@ h5,
 h6 {
 	color: #333;
 	font-family: 'Josefin Sans', sans-serif;
- 	font-weight: 400;
+ 	font-weight: 600;
+ 	/*font-weight: 400;*//* we don't have 400 */
 	line-height: 1.2;
 	margin: 0 0 15px;
 }
@@ -263,7 +265,14 @@ h2 {
 }
 
 h3 {
-	font-size: 24px;
+	background-color: rgba(255,255,255,0.6);
+	border: 1px solid rgb(183, 174, 174); /* mauve */
+	color: rgb(102,  86,  59); /* brown */
+	font-size: 26px;
+	font-weight: 600;
+	padding: 26px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 h4 {
@@ -283,13 +292,14 @@ h6 {
 	color:#fff;
 	padding:15px 0px 5px 0px;
 	letter-spacing:3px;
-	}
+}
 .logo {
 	padding:40 40 0 40;
-	}
+}
 .buck {
 	padding-top:40px;
-	}
+}
+
 /* Objects
 --------------------------------------------- */
 
@@ -303,7 +313,7 @@ video,
 }
 
 img {
-    height: auto;
+  height: auto;
 }
 
 .featured-content img,
@@ -313,8 +323,6 @@ img {
 
 /* Forms
 --------------------------------------------- */
-
-
 
 input:focus,
 textarea:focus {
@@ -336,7 +344,6 @@ input[type="radio"] {
 ::-webkit-input-placeholder {
 	color: #999;
 }
-
 
 input,
 select,
@@ -424,7 +431,6 @@ td {
 	padding: 6px 0;
 }
 
-
 /*
 Structure and Layout
 ---------------------------------------------------------------------------------------------------- */
@@ -445,11 +451,8 @@ Structure and Layout
 .minimum-landing .site-inner {
 	margin: 0px auto 40px;
 	width: 100%;
-	text-align:center;
+	/*text-align:center;*/
 }
-
-
-
 
 /* Column Widths and Positions
 --------------------------------------------- */
@@ -457,20 +460,17 @@ Structure and Layout
 /* Content */
 
 .content {
-	
 	width: 100%;
 }
 
 .sidebar-content .content {
-	text-align:center;
+	/*text-align:center;*/
 	width:100%;
-	
 }
 
 .full-width-content .content {
 	width: 100%;
 }
-
 
 /* Column Classes
 	Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
@@ -676,9 +676,6 @@ Widgets
 	text-align: center;
 }
 
-
-
-
 /* Titles
 --------------------------------------------- */
 
@@ -715,7 +712,7 @@ Widgets
 
 
 
-
+/*
 Plugins
 ---------------------------------------------------------------------------------------------------- */
 
@@ -763,7 +760,7 @@ Plugins
 	color: #fff;
 }
 
-
+/*
 Site Header
 ---------------------------------------------------------------------------------------------------- */
 
@@ -775,7 +772,7 @@ Site Header
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 999;
+	z-index: 40;
 }
 
 .admin-bar .site-header {
@@ -1005,7 +1002,8 @@ Site Navigation
 .nav-primary {
 	background-color: #fff;
 	text-align: right;
-	    padding: 0 40px;
+	margin-top: 50px;
+  padding: 0 40px;
 }
 
 .nav-primary a,
@@ -1024,10 +1022,10 @@ Site Navigation
 }
 
 #menu-primary {
-	    max-width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     position: relative;
-    z-index: 10;
+    z-index: 50;
 }
 
 /* Secondary Navigation

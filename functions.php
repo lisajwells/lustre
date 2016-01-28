@@ -222,4 +222,3 @@ genesis_register_sidebar( array(
 
 //* Remove the edit link
 add_filter ( 'genesis_edit_post_link' , '__return_false' );
-
