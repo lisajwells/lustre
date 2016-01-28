@@ -877,7 +877,7 @@ Site Navigation
 
 .genesis-nav-menu {
 	clear: both;
-	color: #fff;
+	color: rgb(183, 174, 174);
 	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -893,17 +893,17 @@ Site Navigation
 
 .genesis-nav-menu a {
 	border: none;
-	color: #333;
+	color: rgb(183, 174, 174);
 	display: block;
 	font-size: 14px;
-	padding: 20px;
+	padding: 20px 0 20px 40px;
 	position: relative;
 }
 
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	color: #0ebfe9;
+	color: rgb(183, 174, 174);
 }
 
 .genesis-nav-menu > .menu-item > a {
@@ -1007,6 +1007,13 @@ Site Navigation
 
 .nav-primary .sub-menu a:hover {
 	color: #0ebfe9;
+}
+
+#menu-primary {
+	    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
 }
 
 /* Secondary Navigation
