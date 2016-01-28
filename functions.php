@@ -217,3 +217,9 @@ genesis_register_sidebar( array(
 	'name'        => __( 'After Entry', 'minimum' ),
 	'description' => __( 'This is the after entry widget area.', 'minimum' ),
 ) );
+
+////////********** Customized for Lustre **********//////////
+
+//* Remove the edit link
+add_filter ( 'genesis_edit_post_link' , '__return_false' );
+
