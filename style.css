@@ -178,7 +178,7 @@ textarea:focus,
 }
 
 a {
-	border-bottom: 1px dotted #333;
+	/*border-bottom: 1px dotted #333;*/
 	color: #333;
 	font-weight: 400;
 	text-decoration: none;
@@ -190,7 +190,7 @@ a img {
 
 a:hover {
 	color: #BDD42C;
-	border-bottom: 1px dotted #0ebfe9;
+	/*border-bottom: 1px dotted #0ebfe9;*/
 }
 
 p {
@@ -873,6 +873,14 @@ padding: 10px 40px;
   z-index: 20;
 }
 
+#text-2 a {
+	color: #fff;
+	font-weight: 600;
+}
+#text-2 a:hover {
+	color: rgb(102,  86,  59);
+}
+
 /*
 Site Navigation
 ---------------------------------------------------------------------------------------------------- */
@@ -1146,7 +1154,7 @@ Footer Widgets
 }
 
 .footer-widgets a {
-	border-bottom: 1px dotted #fff;
+	/*border-bottom: 1px dotted #fff;*/
 	color: #fff;
 }
 
