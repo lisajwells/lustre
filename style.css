@@ -827,7 +827,7 @@ Site Header
 /* Custom header */
 
 .header-image .title-area {
-	padding: 0;
+ 	padding: 0 40px;
 	position: relative;
   z-index: 5;
 	margin: 0 auto;
@@ -853,7 +853,7 @@ Site Header
 	float: right;
 	text-align: right;
 	width: 100%;
-	padding: 10px 0;
+padding: 10px 40px;
 }
 
 .site-header .search-form {
@@ -903,12 +903,11 @@ Site Navigation
 .genesis-nav-menu .current-menu-item > a {
 	color: rgb(183, 174, 174);
 }
+
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
 	color: rgb(102,  86,  59);
 }
-
-
 
 .genesis-nav-menu > .menu-item > a {
 	text-transform: uppercase;
@@ -996,6 +995,7 @@ Site Navigation
 .nav-primary {
 	background-color: #fff;
 	text-align: right;
+	    padding: 0 40px;
 }
 
 .nav-primary a,
@@ -1204,7 +1204,8 @@ Site Footer
 }
 
 
-/*
+/*+++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
@@ -1212,10 +1213,10 @@ Media Queries
 
 	
 
-	.site-header .widget-area {
+/*	.site-header .widget-area {
 		width: 620px;
 	}
-
+*/
 	.content {
 		
 	}
@@ -1237,10 +1238,10 @@ Media Queries
 	.footer-widgets-3,
 	.minimum-landing .site-inner,
 	.sidebar,
-	.site-header .widget-area,
+	/*.site-header .widget-area,*/
 	.site-tagline-left,
-	.site-tagline-right,
-	.title-area {
+	.site-tagline-right/*,*/
+	/*.title-area*/ {
 		width: 100%;
 	}
 
@@ -1255,7 +1256,7 @@ Media Queries
 	.post-type-archive-portfolio .entry,
 	.site-header .title-area,
 	.site-header .search-form,
-	.site-header .widget-area,
+	/*.site-header .widget-area,*/
 	.site-tagline-left,
 	.site-tagline-right {
 		text-align: center;
@@ -1271,10 +1272,10 @@ Media Queries
 		width: 50%;
 	}
 	
-	.site-header .widget-area {
+/*	.site-header .widget-area {
 		padding: 0 5%;
 	}
-
+*/
 	.site-description {
 		font-size: 30px;
 	}
