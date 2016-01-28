@@ -19,3 +19,5 @@ After Entry - This is the widget that appears after the entry on single posts.
 
 SUPPORT
 Please visit http://my.studiopress.com/help/ for theme support.
+
+Do you like a good story? Sign up here for Lisa’s monthly jewelry stories.

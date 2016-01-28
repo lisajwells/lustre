@@ -68,6 +68,12 @@
 
 */
 
+/*
+mauve: rgb(183, 174, 174);
+mauve-light: rgb(210, 207, 207);
+gold:  rgb(219, 204, 159);
+brown: rgb(102,  86,  59);
+*/
 
 /*
 HTML5 Reset
@@ -824,10 +830,14 @@ Site Header
 
 .header-image .title-area {
 	padding: 0;
+	position: relative;
+  z-index: 5;
 }
 
 .header-image .site-title a {
-	height: 60px;
+  background-size: 150px 150px !important;
+	height: 150px;
+	width: 150px;
 	display: block;
 	text-indent: -9999px;
 	max-width: 320px;
@@ -837,9 +847,11 @@ Site Header
 --------------------------------------------- */
 
 .site-header .widget-area {
+	background-color: rgb(183, 174, 174);
 	float: right;
 	text-align: right;
-	width: 800px;
+	width: 100%;
+	position: absolute;
 }
 
 .site-header .search-form {
@@ -847,6 +859,8 @@ Site Header
 	margin-top: 10px;
 }
 
+.header-widget-area {
+}
 
 /*
 Site Navigation

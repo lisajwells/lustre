@@ -44,8 +44,8 @@ function minimum_background_callback() {
 
 //* Add support for custom header
 add_theme_support( 'custom-header', array(
-	'width'           => 300,
-	'height'          => 300,
+	'width'           => 150,
+	'height'          => 150,
 	'header-selector' => '.site-title a',
 	'header-text'     => false
 ) );
