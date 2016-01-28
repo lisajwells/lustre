@@ -900,11 +900,15 @@ Site Navigation
 	position: relative;
 }
 
-.genesis-nav-menu a:hover,
-.genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+.genesis-nav-menu .current-menu-item > a {
 	color: rgb(183, 174, 174);
 }
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+	color: rgb(102,  86,  59);
+}
+
+
 
 .genesis-nav-menu > .menu-item > a {
 	text-transform: uppercase;
