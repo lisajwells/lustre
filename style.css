@@ -75,6 +75,8 @@ gold:  rgb(219, 204, 159);
 brown: rgb(102,  86,  59);
 */
 
+/*<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,600' rel='stylesheet' type='text/css'>*/
+
 /*
 HTML5 Reset
 ---------------------------------------------------------------------------------------------------- */
@@ -784,13 +786,9 @@ Site Header
 --------------------------------------------- */
 
 .title-area {
-	float: left;
+	/*float: left;*/
 	padding: 18px 0;
 	width: 320px;
-}
-
-.header-image .title-area {
-	padding: 0;
 }
 
 .site-title {
@@ -832,6 +830,10 @@ Site Header
 	padding: 0;
 	position: relative;
   z-index: 5;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1140px;
+  	margin-bottom: -150px; /* height of logo */
 }
 
 .header-image .site-title a {
@@ -851,6 +853,7 @@ Site Header
 	float: right;
 	text-align: right;
 	width: 100%;
+	padding: 10px;
 	position: absolute;
 }
 
@@ -860,6 +863,13 @@ Site Header
 }
 
 .header-widget-area {
+	width: 100%;
+}
+
+#text-2 {
+	max-width: 1140px;
+    margin: 0 auto;
+    color: #fff;
 }
 
 /*
