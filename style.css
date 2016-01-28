@@ -866,9 +866,11 @@ padding: 10px 40px;
 }
 
 #text-2 {
+  color: #fff;
+  margin: 0 auto;
 	max-width: 1140px;
-    margin: 0 auto;
-    color: #fff;
+  position: relative;
+  z-index: 20;
 }
 
 /*
