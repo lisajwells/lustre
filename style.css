@@ -1264,7 +1264,7 @@ Media Queries
 	}
 
 	.post-type-archive-portfolio .entry,
-	.site-header .title-area,
+	/*.site-header .title-area,*/
 	.site-header .search-form,
 	/*.site-header .widget-area,*/
 	.site-tagline-left,
@@ -1273,7 +1273,7 @@ Media Queries
 	}
 
 	.header-image .site-title a {
-		margin: 0 auto 10px;
+		/*margin: 0 auto 10px;*/
 	}
 
 	.site-header .search-form {
@@ -1319,7 +1319,7 @@ Media Queries
 	}
 
 	.footer-widgets .widget,
-	.nav-primary .wrap,
+	/*.nav-primary .wrap,*/
 	.site-footer .wrap,
 	.site-tagline {
 		padding-left: 5%;
