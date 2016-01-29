@@ -120,11 +120,15 @@ add_action ('genesis_after_content', 'lustre_add_contact_form' );
 function lustre_add_contact_form() {
 	echo '<div id="contact-div">';
 
-		echo '<div id="contact-left" class="one-half first">';
+		echo '<div id="contact-left" class="five-twelfths first">';
+		echo '<h3>Schedule a Consultation</h3><p class="form-info">Phone: 999-999-9999<br/>Email: lisa@lustrejewels.net<br/>Or simply have Lisa contact you...</p>';
 		echo	do_shortcode('[vfb id="1"]');
 		echo '</div>'; /* end contact-left */
 
-		echo '<div id="contact-right" class="one-half">';
+		echo '<div class="two-twelfths"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/04-drop-earrings.jpg"></div>';
+
+				echo '<div id="contact-right" class="five-twelfths">';
+		echo '<h3>Do you like a good story?</h3><p>Sign up to receive Lisa’s jewelry stories—monthly tales of rare and beautiful pieces, jewel-related history and behind-the-scenes details.</p>';
 		genesis_get_sidebar();
 		echo '</div>'; /* end contact-right */
 	

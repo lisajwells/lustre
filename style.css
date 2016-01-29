@@ -499,9 +499,19 @@ Structure and Layout
 .three-sixths,
 .two-fourths,
 .two-sixths,
-.two-thirds {
+.two-thirds,
+.two-twelfths,
+.five-twelfths {
 	float: left;
 	margin-left: 2.564102564102564%;
+}
+
+.five-twelfths {
+	width: 40.17094017094017%;
+}
+
+.two-twelfths {
+	width: 14.52991452991453%;
 }
 
 .one-half,
@@ -722,55 +732,6 @@ Widgets
 	border: none;
 }
 
-
-
-
-/*
-Plugins
----------------------------------------------------------------------------------------------------- */
-
-/* Genesis eNews Extended
---------------------------------------------- */
-
-.enews-widget {
-	color: #fff !important;
-}
-
-.enews-widget input {
-	margin-bottom: 16px;
-}
-
-.enews-widget input:focus {
-	border: 1px solid #ddd;
-}
-
-.enews-widget input[type="submit"] {
-	background-color: #393c9b;
-	color: #fff;
-	margin: 0;
-	width: 100%;
-	font-size:16px;
-}
-
-.enews-widget input:hover[type="submit"] {
-	background-color: #fff;
-	color: #333;
-}
-
-.enews form + p {
-	margin-top: 24px;
-}
-
-.sidebar .enews-widget {
-	padding: 30px;
-	background-color:#333;
-	color:#fff;
-	
-}
-
-.sidebar .enews-widget .widget-title {
-	color: #fff;
-}
 
 /*
 Site Header
@@ -1171,10 +1132,66 @@ Sidebar
     max-width: 1140px;
 		margin: 0 5%;
 }
+#contact-div h3 {
+	text-transform: none;
+}
+
+
+/* VFB Contact Form */
+
+#contact-div .form-info {
+	font-weight: 600;
+	text-align: center;
+}
 
 .vfb-fieldset {
 	border:0px #fff solid;
 }
+
+/* Genesis eNews Extended in sidebar
+--------------------------------------------- */
+
+.enews-widget {
+	color: #fff !important;
+}
+
+.enews-widget input {
+	margin-bottom: 16px;
+}
+
+.enews-widget input:focus {
+	border: 1px solid #ddd;
+}
+
+.enews-widget input[type="submit"] {
+	background-color: #393c9b;
+	color: #fff;
+	margin: 0;
+	width: 100%;
+	font-size:16px;
+}
+
+.enews-widget input:hover[type="submit"] {
+	background-color: #fff;
+	color: #333;
+}
+
+.enews form + p {
+	margin-top: 24px;
+}
+
+.sidebar .enews-widget {
+	padding: 30px;
+	background-color:#333;
+	color:#fff;
+	
+}
+
+.sidebar .enews-widget .widget-title {
+	color: #fff;
+}
+
+
 
 /*
 Footer Widgets
