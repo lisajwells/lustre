@@ -1204,8 +1204,19 @@ input[type="email"] {
 .sidebar .enews-widget .widget-title {
 	color: #fff;
 }
-
-
+/* here i get a label to mimic vfb form; lots of index override to display it */
+.enews .screenread {
+    height: auto !important;
+    position: relative !important;
+    left: 0 !important; 
+    /* overflow: hidden; */
+    /* position: absolute; */
+    top: 0 !important; 
+    width: 100% !important;
+    background: #fff !important;
+    color: rgb(102, 86, 59) !important;
+    display: block !important;
+}
 
 /*
 Footer Widgets
