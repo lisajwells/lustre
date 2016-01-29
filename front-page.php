@@ -109,9 +109,11 @@ function lustre_add_landing_content() {
 
 	//* Widget Primary Sidebar with subscribe form
 	// genesis_widget_area( 'after-post', array( 'before' => '<div class="after-post widget-area">', 'after' => '</div>',
-	genesis_widget_area( 'sidebar-primary' );
+	// genesis_widget_area( 'sidebar-primary' );
 
 }
+
+
 
 //* Run the Genesis loop
 genesis();

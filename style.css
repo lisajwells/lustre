@@ -1105,6 +1105,14 @@ Site Navigation
 	margin: 0;
 }
 
+.callout#dictionary {
+	max-width: none;
+	border: none;
+background:-webkit-radial-gradient(circle farthest-side at center center, rgb(253, 253, 253) 0%, rgb(221, 221, 221) 60%);
+background:-o-radial-gradient(circle farthest-side at center center, rgb(253, 253, 253) 0%, rgb(221, 221, 221) 60%);
+background:-moz-radial-gradient(circle farthest-side at center center, rgb(253, 253, 253) 0%, rgb(221, 221, 221) 60%);
+background:radial-gradient(circle farthest-side at center center, rgb(253, 253, 253) 0%, rgb(221, 221, 221) 60%);}
+
 div.divider {
 	width: 100%;
 	height: 16px;
