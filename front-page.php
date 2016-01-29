@@ -62,7 +62,6 @@ remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 add_action ('genesis_entry_content', 'lustre_add_landing_content' );
 
 function lustre_add_landing_content() {
- // <a class="smoothscroll" href="#notables_top" from kousouros>
 	echo '<section class="content-section" id="section-1">';
 		echo '<div class="subhed-img" id="01-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/01-Lustre-Jewels.jpg"</div>';
 		echo '<div class="callout" id="01-callout">' . get_field('01_callout') . '</div>';
@@ -91,8 +90,6 @@ function lustre_add_landing_content() {
 
 	echo '</section>'; /* end section-2 */
 
-
-
 	echo '<div class="divider">&nbsp;</div>';
 
 	echo '<section class="content-section" id="section-3">';
@@ -109,6 +106,15 @@ function lustre_add_landing_content() {
 
 	echo '</section>'; /* end section-4 */
 
+}
+
+//* Display content including Advanced Custom Fields
+add_action ('genesis_after_content', 'lustre_add_contact_form' );
+
+function lustre_add_contact_form() {
+	echo '<div id="contact-div">';
+	echo	do_shortcode('[vfb id="1"]');
+	echo '</div>';
 
 }
 

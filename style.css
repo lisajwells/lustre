@@ -763,7 +763,6 @@ Plugins
 
 .sidebar .enews-widget {
 	padding: 30px;
-	border-radius:8px;
 	background-color:#333;
 	color:#fff;
 	
@@ -1131,9 +1130,8 @@ Sidebar
 
 .sidebar {
 	margin-top: 10px;
-	width: 60%;
-	margin:auto;
-	border:#005124 double 8px;
+  float: right;
+  width: 50%;
  
 }
 
@@ -1169,6 +1167,14 @@ Sidebar
 	background-color: #0ebfe9;
 	color: #fff;
 }
+
+/* Contact Form */
+#contact-div {
+	width: 50%;
+	background-color: blanchedalmond;
+}
+
+
 
 /*
 Footer Widgets
