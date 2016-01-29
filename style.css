@@ -1145,11 +1145,17 @@ Sidebar
 }
 
 .vfb-fieldset {
-	border:0px #fff solid;
+	border:none;
+	padding: 0;
+	margin: 0;
 }
 
 .vfb-legend {
 	display: none;
+}
+
+.vfb-item {
+	margin-bottom: 16px;
 }
 
 label.vfb-desc {
