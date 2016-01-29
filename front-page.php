@@ -53,7 +53,7 @@ remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 //* Remove site footer widgets
 remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
 
-//* Remove site footer elements
+//* Don't Remove site footer elements
 // remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
 // remove_action( 'genesis_footer', 'genesis_do_footer' );
 // remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
@@ -108,15 +108,23 @@ function lustre_add_landing_content() {
 
 }
 
-//* Display content including Advanced Custom Fields
+//* Display Contact forms after content
+
+/* found in genesis / lib / structure / layout.php */
+// add_action( 'genesis_after_content', 'genesis_get_sidebar' );
+remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
+
+
 add_action ('genesis_after_content', 'lustre_add_contact_form' );
 
 function lustre_add_contact_form() {
 	echo '<div id="contact-div">';
 	echo	do_shortcode('[vfb id="1"]');
-	echo '</div>';
+	echo '</div>'.
+	genesis_get_sidebar();
 
 }
+// add_action( 'genesis_after_content', 'genesis_get_sidebar' );
 
 //* Run the Genesis loop
 genesis();

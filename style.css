@@ -1107,13 +1107,12 @@ Site Navigation
 .callout#dictionary {
 	max-width: none;
 	border: none;
-	background: -moz-radial-gradient(center, ellipse cover, rgba(253,253,253,1) 0%, rgba(221,221,221,1) 100%); /* ff3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(253,253,253,1)), color-stop(100%, rgba(221,221,221,1))); /* safari4+,chrome */
-	background:-webkit-radial-gradient(center, ellipse cover, rgba(253,253,253,1) 0%, rgba(221,221,221,1) 100%); /* safari5.1+,chrome10+ */
-	background: -o-radial-gradient(center, ellipse cover, rgba(253,253,253,1) 0%, rgba(221,221,221,1) 100%); /* opera 11.10+ */
-	background: -ms-radial-gradient(center, ellipse cover, rgba(253,253,253,1) 0%, rgba(221,221,221,1) 100%); /* ie10+ */
-	background:radial-gradient(ellipse at center, rgba(253,253,253,1) 0%, rgba(221,221,221,1) 100%); /* w3c */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#dddddd',GradientType=1 ); /* ie6-9 */	color: #999999;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdfdfd+0,dddddd+100 */
+	background: #fdfdfd; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #fdfdfd 0%, #dddddd 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover,  #fdfdfd 0%,#dddddd 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center,  #fdfdfd 0%,#dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#dddddd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 div.divider {
@@ -1177,8 +1176,6 @@ Sidebar
 	border:0px #fff solid;
 }
 
-
-
 /*
 Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
@@ -1240,7 +1237,6 @@ Footer Widgets
 	border: 1px solid #ddd;
 }
 
-
 /*
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
@@ -1248,8 +1244,7 @@ Site Footer
 .site-footer {
 	background-color: rgb(210, 207, 207);
 	color: rgb(102,  86,  59);
-	font-size: 16px;
-	padding: 30px 0;
+	padding: 20px 0;
 	text-align: center;
 }
 
@@ -1268,12 +1263,11 @@ Site Footer
 }
 
 .site-footer p {
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
 	margin-bottom: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
 }
-
 
 /*+++++++++++++++++++++++++++++++++++++++++++++
 +++++++++++++++++++++++++++++++++++++++++++++++
