@@ -74,22 +74,46 @@ function lustre_add_landing_content() {
 
 	echo '<section class="content-section" id="section-2">';
 		echo '<div class="subhed-img" id="02-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/02-Lustre-Services.jpg"</div>';
-		echo '<div id="approach" class="one-half first"> 
+		echo '<div id="approach-and-custom" class="one-half first"> 
 			<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-pink-ring.jpg">'.
-			get_field('02_approach').'
-			</div>';
+			get_field('02_approach');
+			get_field('02_custom_pieces');
+			echo '
+			<img id="02-aqua-earrings-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-aqua-earrings.jpg">
+			</div>'; /* end approach-and-custom */
+
 		echo '<div id="sourcing" class="one-half">'. 
 			get_field('02_sourcing').'
 			<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-gold-bracelet.jpg">
 			</div>';
 		echo '<div id="custom-pieces" class="one-half first">'. 
 			get_field('02_custom_pieces').'
-			<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-aqua-earrings.jpg">
+			<img id="02-aqua-earrings-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-aqua-earrings.jpg">
 			</div>';
 		echo '<div id="events" class="one-half">'. 
 			get_field('02_events').'
 			</div>';
 	echo '</section>'; /* end section-2 */
+
+	// echo '<section class="content-section" id="section-2">';
+	// 	echo '<div class="subhed-img" id="02-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/02-Lustre-Services.jpg"</div>';
+	// 	echo '<div id="approach" class="one-half first"> 
+	// 		<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-pink-ring.jpg">'.
+	// 		get_field('02_approach').'
+	// 		</div>';
+	// 	echo '<div id="sourcing" class="one-half">'. 
+	// 		get_field('02_sourcing').'
+	// 		<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-gold-bracelet.jpg">
+	// 		</div>';
+	// 	echo '<div id="custom-pieces" class="one-half first">'. 
+	// 		get_field('02_custom_pieces').'
+	// 		<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-aqua-earrings.jpg">
+	// 		</div>';
+	// 	echo '<div id="events" class="one-half">'. 
+	// 		get_field('02_events').'
+	// 		</div>';
+	// echo '</section>'; /* end section-2 */
+
 
 	echo '<div class="divider">&nbsp;</div>';
 
@@ -107,13 +131,8 @@ function lustre_add_landing_content() {
 
 	echo '</section>'; /* end section-4 */
 
-	//* Widget Primary Sidebar with subscribe form
-	// genesis_widget_area( 'after-post', array( 'before' => '<div class="after-post widget-area">', 'after' => '</div>',
-	// genesis_widget_area( 'sidebar-primary' );
 
 }
-
-
 
 //* Run the Genesis loop
 genesis();
