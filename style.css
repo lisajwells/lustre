@@ -1130,8 +1130,6 @@ Sidebar
 .sidebar {
 	margin-top: 10px;
   float: right;
-  width: 50%;
- 
 }
 
 .sidebar-content .sidebar {
@@ -1169,7 +1167,9 @@ Sidebar
 
 /* Contact Form */
 #contact-div {
-	width: 50%;
+    width: 100%;
+    max-width: 1140px;
+		margin: 0 5%;
 }
 
 .vfb-fieldset {

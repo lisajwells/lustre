@@ -112,16 +112,23 @@ function lustre_add_landing_content() {
 
 /* found in genesis / lib / structure / layout.php */
 // add_action( 'genesis_after_content', 'genesis_get_sidebar' );
-remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
 
+/* put where i want instead */
+remove_action( 'genesis_after_content', 'genesis_get_sidebar' ); 
 
 add_action ('genesis_after_content', 'lustre_add_contact_form' );
-
 function lustre_add_contact_form() {
 	echo '<div id="contact-div">';
-	echo	do_shortcode('[vfb id="1"]');
-	echo '</div>'.
-	genesis_get_sidebar();
+
+		echo '<div id="contact-left" class="one-half first">';
+		echo	do_shortcode('[vfb id="1"]');
+		echo '</div>'; /* end contact-left */
+
+		echo '<div id="contact-right" class="one-half">';
+		genesis_get_sidebar();
+		echo '</div>'; /* end contact-right */
+	
+	echo '</div>'; /* end contact-div */
 
 }
 // add_action( 'genesis_after_content', 'genesis_get_sidebar' );
