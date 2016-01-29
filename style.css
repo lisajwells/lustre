@@ -357,14 +357,14 @@ select,
 textarea {
 	background-color: #fff;
 	border: 1px solid #ddd;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 	box-shadow: none;
 	color: #333;
 	font-size: 16px;
 	font-weight: 300;
 	padding: 10px;
 	width: 31%;
-	margin:1%;
+	/*margin:1%;*/
 }
 
 button,
@@ -382,7 +382,8 @@ input[type="submit"],
 	padding: 16px 24px;
 	text-transform: uppercase;
 	/*width: 31% !important;*/
-	margin:1%;
+	width: 100%;
+	/*margin:1%;*/
 }
 
 button:hover,
@@ -391,7 +392,7 @@ input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
 .entry-content .button:hover {
-	background-color: #0ebfe9;
+	background-color: rgb(183, 174, 174);
 }
 
 .entry-content .button:hover {
@@ -1089,8 +1090,6 @@ Sidebar
 ---------------------------------------------------------------------------------------------------- */
 
 .sidebar {
-	margin-top: 10px;
-  float: right;
 }
 
 .sidebar-content .sidebar {
@@ -1142,10 +1141,25 @@ Sidebar
 #contact-div .form-info {
 	font-weight: 600;
 	text-align: center;
+	margin: 0;
 }
 
 .vfb-fieldset {
 	border:0px #fff solid;
+}
+
+.vfb-legend {
+	display: none;
+}
+
+label.vfb-desc {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+	background-color: rgb(210, 207, 207);
+	width: 100%;
 }
 
 /* Genesis eNews Extended in sidebar
@@ -1164,27 +1178,27 @@ Sidebar
 }
 
 .enews-widget input[type="submit"] {
-	background-color: #393c9b;
+/*	background-color: #393c9b;
 	color: #fff;
 	margin: 0;
 	width: 100%;
 	font-size:16px;
-}
+*/}
 
 .enews-widget input:hover[type="submit"] {
-	background-color: #fff;
+/*	background-color: #fff;
 	color: #333;
-}
+*/}
 
 .enews form + p {
 	margin-top: 24px;
 }
 
 .sidebar .enews-widget {
-	padding: 30px;
-	background-color:#333;
+	/*padding: 30px;*/
+/*	background-color:#333;
 	color:#fff;
-	
+*/	
 }
 
 .sidebar .enews-widget .widget-title {
