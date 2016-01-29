@@ -1171,7 +1171,10 @@ Sidebar
 /* Contact Form */
 #contact-div {
 	width: 50%;
-	background-color: blanchedalmond;
+}
+
+.vfb-fieldset {
+	border:0px #fff solid;
 }
 
 

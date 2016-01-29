@@ -54,9 +54,9 @@ remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );
 remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
 
 //* Remove site footer elements
-remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
-remove_action( 'genesis_footer', 'genesis_do_footer' );
-remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
+// remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
+// remove_action( 'genesis_footer', 'genesis_do_footer' );
+// remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
 
 //* Display content including Advanced Custom Fields
 add_action ('genesis_entry_content', 'lustre_add_landing_content' );
