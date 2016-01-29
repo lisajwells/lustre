@@ -19,9 +19,3 @@ After Entry - This is the widget that appears after the entry on single posts.
 
 SUPPORT
 Please visit http://my.studiopress.com/help/ for theme support.
-
-
-<p>A sought-after expert, Lisa has been featured numerous times in the Boston Globe and recognized throughout Europe and the United States with industry awards for service, sales achievement and innovation.</p>
-<p>During her time serving clients at Escada and The Fifth Avenue Club at Saks Fifth Avenue, Lisa cultivated an interest in fine jewelry.  Lisa decided to follow this passion and strengthen her knowledge by pursuing an accreditation at the Gemological Institute of America (GIA), the world’s leading source of education in gems and jewelry.</p>
-<p>Armed with this training, Lisa saw an opportunity to combine her cultivated aesthetic and deep understanding of the luxury world with her network of jewelry designers, artisans and gem cutters to provide a one-of-a-kind shopping experience.  And Lustre Jewels was born. Now, Lisa works with clients to source their jewelry needs all over the world – from brand name designers to commissioned pieces, pearls to diamonds – with a hands-on approach and level of service that is unparalleled.</p>
-

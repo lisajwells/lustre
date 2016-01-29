@@ -1085,9 +1085,10 @@ Site Navigation
   border: 1px solid rgb(183, 174, 174); /* mauve */
   clear: both;
 	display: block;
-  margin: 0 auto;
+  margin: -40px auto 40px;
   max-width: 1140px;
   padding: 26px;
+  position: relative;
   font-size: 26px;
   font-weight: 600;
   line-height: 1.2;
