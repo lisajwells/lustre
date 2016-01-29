@@ -225,3 +225,11 @@ add_filter ( 'genesis_edit_post_link' , '__return_false' );
 
 //* Remove VFB styling for form */
 add_filter( 'visual-form-builder-css', '__return_false' );
+
+//* Change footer text */
+//* Change the footer text
+add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
+function sp_footer_creds_filter( $creds ) {
+	$creds = '[footer_copyright]<a href="http://lustre.dev"> Lustre Jewels.</a> All Rights Reserved.';
+	return $creds;
+}
