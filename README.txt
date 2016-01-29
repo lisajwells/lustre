@@ -21,9 +21,7 @@ SUPPORT
 Please visit http://my.studiopress.com/help/ for theme support.
 
 
-<h3>Events</h3>
-<p>Lustre Jewelry hosts trunk shows and salon events several times each year.  These invitation-only gatherings offer an opportunity for our clients, their friends and family, to engage with Lisa and a selection of our preferred partners to view estate jewelry, precious gemstones and modern designs.</p>
-<p>Submit your email here for more information and to be notified about future events in your area.</p>
-
-
+<p>A sought-after expert, Lisa has been featured numerous times in the Boston Globe and recognized throughout Europe and the United States with industry awards for service, sales achievement and innovation.</p>
+<p>During her time serving clients at Escada and The Fifth Avenue Club at Saks Fifth Avenue, Lisa cultivated an interest in fine jewelry.  Lisa decided to follow this passion and strengthen her knowledge by pursuing an accreditation at the Gemological Institute of America (GIA), the world’s leading source of education in gems and jewelry.</p>
+<p>Armed with this training, Lisa saw an opportunity to combine her cultivated aesthetic and deep understanding of the luxury world with her network of jewelry designers, artisans and gem cutters to provide a one-of-a-kind shopping experience.  And Lustre Jewels was born. Now, Lisa works with clients to source their jewelry needs all over the world – from brand name designers to commissioned pieces, pearls to diamonds – with a hands-on approach and level of service that is unparalleled.</p>
 
