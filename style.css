@@ -270,7 +270,9 @@ h3 {
 	color: rgb(102,  86,  59); /* brown */
 	font-size: 26px;
 	font-weight: 600;
+	margin-top: -40px;
 	padding: 26px;
+  position: relative;
 	text-align: center;
 	text-transform: uppercase;
 }
