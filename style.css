@@ -1157,6 +1157,9 @@ Sidebar
 .vfb-item {
 	margin-bottom: 16px;
 }
+.vfb-text {
+	color: #999;
+}
 
 label.vfb-desc {
     display: block;
@@ -1166,6 +1169,19 @@ input[type="text"],
 input[type="email"] {
 	background-color: rgb(210, 207, 207);
 	width: 100%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #999;
 }
 
 /* Genesis eNews Extended in sidebar
