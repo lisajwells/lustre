@@ -222,10 +222,19 @@ genesis_register_sidebar( array(
 
 //* Register hello widget area
 genesis_register_sidebar( array(
-	'id'            => 'hello',
+	'id'            => 'hello-widget',
 	'name'          => __( 'Hello', 'minimum' ),
 	'description'   => __( 'This is a widget for line above nav', 'minimum' ),
 ) );
+
+add_action( 'genesis_before_header', 'add_hello_widget_area' );
+function add_hello_widget_area() {
+                genesis_widget_area( 'hello-widget', array(
+		'before' => '<div class="custom-widget widget-area hello-widget-area">',
+		'after'  => '</div>',
+    ) );
+
+}
 
 //* Remove the edit link
 add_filter ( 'genesis_edit_post_link' , '__return_false' );

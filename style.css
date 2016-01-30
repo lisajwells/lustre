@@ -774,7 +774,9 @@ Site Header
 	letter-spacing: 1px;
 	/*position: fixed;*/
 	top: 0;
-	width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1140px;
 	z-index: 40;
 }
 
@@ -797,6 +799,7 @@ Site Header
 	line-height: 1;
 	margin: 0;
 	text-transform: uppercase;
+	width: 150px;
 }
 
 .site-title a,
@@ -837,12 +840,14 @@ Site Header
 }
 
 .header-image .site-title a {
-  background-size: 150px 150px !important;
-	height: 150px;
-	width: 150px;
+	background-size: 150px 150px !important;
 	display: block;
-	text-indent: -9999px;
+	height: 150px;
 	max-width: 320px;
+    position: relative;
+	text-indent: -9999px;
+	top: -48px;
+	width: 150px;
 }
 
 /* Widget Area
@@ -853,7 +858,8 @@ Site Header
 	float: right;
 	text-align: right;
 	width: 100%;
-padding: 10px 40px;
+	padding: 10px 0;
+	background-color: #fff;
 }
 
 .site-header .search-form {
@@ -862,22 +868,34 @@ padding: 10px 40px;
 }
 
 .header-widget-area {
-	width: 100%;
+	/*width: 100%;*/
+	
 }
 
-#text-2 {
-  color: #fff;
-  margin: 0 auto;
+.hello-widget-area {
+	background-color: rgb(183, 174, 174);
+	padding: 12px 0;
+	position: relative;
+    z-index: 0;
+}
+
+section#text-3 {
+	color: #fff;
+	margin: 0 auto;
 	max-width: 1140px;
-  position: relative;
-  z-index: 20;
+    padding-left: 200px;
+	position: relative;
+	text-align: right;
+	    width: 90%;
+	z-index: 20;
 }
 
-#text-2 a {
+
+section#text-3 a {
 	color: #fff;
 	font-weight: 600;
 }
-#text-2 a:hover {
+section#text-3 a:hover {
 	color: rgb(102,  86,  59);
 }
 
