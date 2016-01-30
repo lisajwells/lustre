@@ -196,7 +196,35 @@ a:hover {
 
 .genesis-nav-menu .current-menu-item > a,
 a:active {
-    outline: none;
+    outline: none; /* remove dotted line around active nav menu item */
+
+}
+
+.dont-clicked {
+	outline: none !important; /*trying to remove blue glow on schedule button*/
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+a:active,
+a:hover,
+a:focus,
+a:visited {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+	outline: none !important; /*trying to remove blue glow on schedule button*/
+}
+
+a *:active,
+a *:hover,
+a *:focus,
+a *:visited,
+ {
+    outline:none; /*trying to remove blue glow on schedule button*/
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 p {
@@ -740,7 +768,7 @@ Site Header
 
 .site-header {
 	background-color: #fff;
-	border-bottom: 1px solid #eee;
+	/*border-bottom: 1px solid #eee;*/
 	left: 0;
 	letter-spacing: 1px;
 	/*position: fixed;*/
