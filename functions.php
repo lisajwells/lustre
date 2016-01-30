@@ -220,6 +220,13 @@ genesis_register_sidebar( array(
 
 ////////********** Customized for Lustre **********//////////
 
+//* Register hello widget area
+genesis_register_sidebar( array(
+	'id'            => 'hello',
+	'name'          => __( 'Hello', 'minimum' ),
+	'description'   => __( 'This is a widget for line above nav', 'minimum' ),
+) );
+
 //* Remove the edit link
 add_filter ( 'genesis_edit_post_link' , '__return_false' );
 
