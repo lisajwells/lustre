@@ -101,10 +101,6 @@ function lustre_add_landing_content() {
 
 	echo '<div class="divider">&nbsp;</div>';
 
-	echo '<section class="content-section" id="section-4">';
-		echo '<div class="subhed-img" id="04-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/04-Lustre-Contact.jpg"></div>';
-
-	echo '</section>'; /* end section-4 */
 
 }
 
@@ -119,6 +115,10 @@ remove_action( 'genesis_after_content', 'genesis_get_sidebar' );
 add_action ('genesis_after_content', 'lustre_add_contact_form' );
 function lustre_add_contact_form() {
 	echo '<div id="contact-div">';
+	echo '<section class="content-section" id="section-4">';
+		echo '<div class="subhed-img" id="04-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/04-Lustre-Contact.jpg"></div>';
+
+	echo '</section>'; /* end section-4 */
 
 		echo '<div id="contact-left" class="five-twelfths first">';
 		echo '<h3>Schedule a Consultation</h3><p class="form-info">Phone: 999-999-9999<br/>Email: lisa@lustrejewels.net<br/>Or simply have Lisa contact you...</p>';
