@@ -463,8 +463,8 @@ Structure and Layout
 }
 
 .content-section {
-  margin: 0 5%;
-	max-width: 1140px;
+  margin: 0 auto;
+max-width: 1140px;
   width: 90%;
 }
 
