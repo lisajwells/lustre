@@ -63,10 +63,16 @@ add_action ('genesis_entry_content', 'lustre_add_landing_content' );
 
 function lustre_add_landing_content() {
 	echo '<section class="content-section" id="section-1">';
-		echo '<div class="subhed-img" id="01-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/01-Lustre-Jewels.jpg"</div>';
+		echo '<div class="subhed-img" id="01-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/01-Lustre-Jewels.jpg"></div>';
 		echo '<div class="callout" id="01-callout">' . get_field('01_callout') . '</div>';
 		echo '<div class="section-text one-half first" id="01-text">' . get_field('01_text') . '</div>';
-		echo '<div class="one-half" id="01-jewel-img"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/01-blue-bracelet.jpg"</div>';
+		
+		echo '<div class="one-half" id="01-jewel-img">';
+		echo	do_shortcode('[soliloquy id="105"]');
+		echo '</div>';
+
+// [soliloquy slug="section-one-slider"]
+
 	echo '</section>'; /* end section-1 */
 
 	echo '<div class="callout" id="dictionary">Lustre [luhs-ter] noun:<br />Radiant or luminous brightness;<br />brilliance; radiance</div>';
@@ -74,17 +80,17 @@ function lustre_add_landing_content() {
 	echo '<section class="content-section" id="section-2">';
 		echo '<div class="subhed-img" id="02-subhed"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/02-Lustre-Services.jpg"></div>';
 		echo '<div id="approach-and-custom" class="one-half first"> 
-			<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-pink-ring.jpg">'.
+			<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/pink-stone-ring-500-veryhigh.jpg">'.
 			get_field('02_approach');
 			echo ''.
 			get_field('02_custom_pieces');
 			echo '
-			<img id="02-aqua-earrings-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-aqua-earrings.jpg">
+			<img id="02-aqua-earrings-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/aqua-earrings-500-veryhigh.jpg">
 			</div>'; /* end approach-and-custom */
 
 		echo '<div id="sourcing-and-events" class="one-half">'. 
 			get_field('02_sourcing').'
-			<img id="02-pink-ring-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/02-gold-bracelet.jpg">'. 
+			<img id="02-gold-bracelet-img" src="' . get_home_url() .'/wp-content/uploads/2016/01/gold-bracelet-1000-high.jpg">'. 
 			get_field('02_events').'
 			</div>'; /* end sourcing-and-events */
 
@@ -125,7 +131,7 @@ function lustre_add_contact_form() {
 		echo	do_shortcode('[vfb id="1"]');
 		echo '</div>'; /* end contact-left */
 
-		echo '<div class="two-twelfths"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/04-drop-earrings.jpg"></div>';
+		echo '<div class="two-twelfths"><img src="' . get_home_url() .'/wp-content/uploads/2016/01/drops-500-veryhigh.jpg"></div>';
 
 				echo '<div id="contact-right" class="five-twelfths">';
 		echo '<h3>Do you like a good story?</h3><p>Sign up to receive Lisa’s jewelry stories—monthly tales of rare and beautiful pieces, jewel-related history and behind-the-scenes details.</p>';

@@ -1087,7 +1087,7 @@ Site Navigation
 
 #responsive-menu-icon::before {
 	color: #333;
-	content: "\f333";
+	content: "Menu \f333";
 	font: normal 24px/1 'dashicons';
 	margin: 0 auto;
 }
