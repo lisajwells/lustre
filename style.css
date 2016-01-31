@@ -1288,6 +1288,17 @@ input[type="email"] {
     display: block !important;
 }
 
+/* Soliloquy Slider */
+
+.soliloquy-container .soliloquy-pager {
+	display: none;
+}
+
+.soliloquy-controls-direction {
+    display: none;
+}
+
+
 /*
 Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
