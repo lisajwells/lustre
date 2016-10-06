@@ -30,7 +30,7 @@ function minimum_enqueue_scripts() {
 add_image_size( 'portfolio', 540, 340, TRUE );
 
 //* Add support for custom background
-add_theme_support( 'custom-background', array( 'wp-head-callback' => 'minimum_background_callback' ) ); 
+add_theme_support( 'custom-background', array( 'wp-head-callback' => 'minimum_background_callback' ) );
 
 //* Add custom background callback for background color
 function minimum_background_callback() {
@@ -70,7 +70,7 @@ genesis_unregister_layout( 'content-sidebar-sidebar' );
 genesis_unregister_layout( 'sidebar-content-sidebar' );
 genesis_unregister_layout( 'sidebar-sidebar-content' );
 
-//* Unregister secondary sidebar 
+//* Unregister secondary sidebar
 unregister_sidebar( 'sidebar-alt' );
 
 //* Create portfolio custom post type
@@ -92,8 +92,16 @@ function minimum_portfolio_post_type() {
 			'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'revisions', 'page-attributes', 'genesis-seo' ),
 		)
 	);
-	
+
 }
+
+//* Remove woo reviews
+add_filter( 'woocommerce_product_tabs', 'wcs_woo_remove_reviews_tab', 98 );
+    function wcs_woo_remove_reviews_tab($tabs) {
+    unset($tabs['reviews']);
+    return $tabs;
+}
+
 
 //* Remove site description
 remove_action( 'genesis_site_description', 'genesis_seo_site_description' );
@@ -128,7 +136,7 @@ function minimum_site_tagline() {
 		printf( '<div %s>', genesis_attr( 'site-tagline-left' ) );
 		printf( '<p %s>%s</p>', genesis_attr( 'site-description' ), esc_html( get_bloginfo( 'description' ) ) );
 		echo '</div>';
-	
+
 		printf( '<div %s>', genesis_attr( 'site-tagline-right' ) );
 		genesis_widget_area( 'site-tagline-right' );
 		echo '</div>';
@@ -180,7 +188,7 @@ function minimum_portfolio_items( $query ) {
 //* Remove comment form allowed tags
 add_filter( 'comment_form_defaults', 'minimum_remove_comment_form_allowed_tags' );
 function minimum_remove_comment_form_allowed_tags( $defaults ) {
-	
+
 	$defaults['comment_notes_after'] = '';
 	return $defaults;
 
@@ -242,10 +250,24 @@ add_filter ( 'genesis_edit_post_link' , '__return_false' );
 //* Remove VFB styling for form */
 add_filter( 'visual-form-builder-css', '__return_false' );
 
+//* Let us have SVGs */
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 //* Change footer text */
-//* Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = '[footer_copyright]<a href="http://lustre.dev"> Lustre Jewels.</a> All Rights Reserved.';
+	$creds = '[footer_copyright]<a href="http://lustre.dev"> Lustre Jewels.</a> All Rights Reserved.<br/><a href="http://curioelectro.com/" target="_blank">Website Design & Development by Curio Electro</a>';
 	return $creds;
+}
+
+//* Remove Primary Sidebar from woocommerce pages *//
+add_action( 'get_header', 'remove_primary_sidebar_product_pages' );
+function remove_primary_sidebar_product_pages() {
+	if ( is_singular('product') || is_post_type_archive('product') ) {
+		remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
+	}
 }

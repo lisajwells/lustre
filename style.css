@@ -13,7 +13,7 @@
 	Template Version: 2.0
 
 	License: GPL-2.0+
-	License URI: http://www.opensource.org/licenses/gpl-license.php 
+	License URI: http://www.opensource.org/licenses/gpl-license.php
 */
 
 
@@ -146,10 +146,10 @@ Defaults
 
 body {
 	background-color: #fff;
-	color: rgb(102,  86,  59);
-	font-family: 'Josefin Sans', sans-serif;	
-	font-size: 18px;
-	font-weight: 300;
+	color: #222;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
 	line-height: 1.625;
 	overflow-x: hidden;
 }
@@ -167,6 +167,7 @@ textarea:focus,
 	-ms-transition:     all 0.1s ease-in-out;
 	-o-transition:      all 0.1s ease-in-out;
 	transition:         all 0.1s ease-in-out;
+
 }
 
 ::-moz-selection {
@@ -180,7 +181,7 @@ textarea:focus,
 }
 
 a {
-	/*border-bottom: 1px dotted #333;*/
+	border-bottom: 1px dotted #333;
 	color: #333;
 	font-weight: 400;
 	text-decoration: none;
@@ -191,7 +192,7 @@ a img {
 }
 
 a:hover {
-	color: #BDD42C;
+	color: #888;
 	/*border-bottom: 1px dotted #0ebfe9;*/
 }
 
@@ -234,7 +235,7 @@ p {
 }
 
 strong {
-	font-weight: 400;
+	font-weight: 700;
 }
 
 ol,
@@ -266,7 +267,10 @@ blockquote::before {
 	background-color: #333;
 	color: #ddd;
 }
-
+.half {
+	max-width:50%;
+	border:2px solid #fff;
+	}
 cite {
 	font-style: normal;
 }
@@ -295,7 +299,7 @@ h1 {
 }
 
 h2 {
-	font-size: 22px;
+	font-size: 30px;
 }
 
 h3 {
@@ -304,9 +308,10 @@ h3 {
 	color: rgb(102,  86,  59); /* brown */
 	font-size: 26px;
 	font-weight: 600;
-	margin-top: -40px;
+    margin-bottom: 28px;
+	margin-top: -30px;
 	padding: 26px;
-  position: relative;
+	position: relative;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -326,7 +331,7 @@ h6 {
 .opening {
 	background-color:#393C9B;
 	color:#fff;
-	padding:15px 0px 5px 0px;
+	padding:15px 0 5px 0;
 	letter-spacing:3px;
 }
 .logo {
@@ -335,7 +340,47 @@ h6 {
 .buck {
 	padding-top:40px;
 }
-
+#pink-ring-img-02 {
+	max-width:50%;
+	}
+.thankYou {
+	padding-top:40px;
+	text-align:center;
+	}
+.definition {
+	font-weight:300;
+	}
+.back {
+	color:#fff;
+	padding:10px;
+	background-color:#DBCC9F;
+	font-size:20px;
+	margin:auto !important;
+	display:inline-block;
+	}
+.back a:link {
+	color:#fff;
+	}
+.back a:hover {
+	background-color:#B7AEAE !important;
+	color:#fff !important;
+	}
+.back {
+	display:none;
+	}
+.air {
+	margin-top:40px;
+	}
+.pricing {
+	border-top:1px solid #888;
+	padding-top:40px;
+	}
+.details {
+	font-size:14px;
+	}
+.special {
+	padding:0 60px;
+}
 /* Objects
 --------------------------------------------- */
 
@@ -356,7 +401,9 @@ img {
 .gallery img {
 	width: auto; /* IE8 */
 }
+.entry-footer {
 
+}
 /* Forms
 --------------------------------------------- */
 
@@ -364,6 +411,7 @@ input:focus,
 textarea:focus {
 	border: 1px solid #333;
 	outline: none;
+	background-color:#e5e5e5 !important;
 }
 
 input[type="checkbox"],
@@ -390,12 +438,15 @@ textarea {
 	box-shadow: none;
 	color: #333;
 	font-size: 16px;
-	font-weight: 300;
+	font-weight: 700;
 	padding: 10px;
 	width: 31%;
+	letter-spacing:1px;
 	/*margin:1%;*/
 }
-
+textarea#comment {
+	width:100%;
+	}
 button,
 input[type="button"],
 input[type="reset"],
@@ -407,12 +458,12 @@ input[type="submit"],
 	box-shadow: none;
 	color: #fff;
 	cursor: pointer;
-	font-weight: 300;
+	font-weight: 700;
+    margin-top: 2%;
 	padding: 16px 24px;
 	text-transform: uppercase;
-	/*width: 31% !important;*/
 	width: 100%;
-	/*margin:1%;*/
+	letter-spacing:1px;
 }
 
 button:hover,
@@ -431,6 +482,7 @@ input:hover[type="submit"],
 .button {
 	border-radius: 3px;
 	display: inline-block;
+
 }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -486,16 +538,24 @@ Structure and Layout
 }
 
 .minimum-landing .site-inner {
-	margin: 0px auto 40px;
+	margin: 0 auto 100px;
 	width: 100%;
 	/*text-align:center;*/
 }
 
 .content-section {
-  margin: 0 auto;
-max-width: 1140px;
-  width: 90%;
+	margin: 100px auto 0;
+	max-width: 1140px;
+	width: 90%;
 }
+
+.content-section#section-4 {
+	max-width: 100%;
+	width: 100%;
+}
+#section-1 {
+	margin-top:0;
+	}
 
 /* Column Widths and Positions
 --------------------------------------------- */
@@ -511,9 +571,27 @@ max-width: 1140px;
 	width:100%;
 }
 
+.woocommerce .site-inner,
 .full-width-content .content {
-	width: 100%;
+	margin:60px auto;
+  max-width: 1140px;
 }
+
+/* Blog
+--------------------------------------------- */
+.clearIt {
+	clear:both;
+	padding-top:40px;
+	}
+.blogImage {
+	max-width:50%;
+	}
+.thirds {
+	float:left;
+	width:31%;
+	margin:1%;
+	}
+
 
 /* Column Classes
 	Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
@@ -522,7 +600,6 @@ max-width: 1140px;
 .five-sixths,
 .four-sixths,
 .one-fourth,
-.one-half,
 .one-sixth,
 .one-third,
 .three-fourths,
@@ -533,11 +610,14 @@ max-width: 1140px;
 .two-twelfths,
 .five-twelfths {
 	float: left;
-	margin-left: 2.564102564102564%;
+	margin-left: 6.564102564102564%;
 }
-
+.one-half {
+	float: left;
+	margin-left: 10.564102564102564%;
+	}
 .five-twelfths {
-	width: 40.17094017094017%;
+	width: 36.17094017094017%;
 }
 
 .two-twelfths {
@@ -547,7 +627,7 @@ max-width: 1140px;
 .one-half,
 .three-sixths,
 .two-fourths {
-	width: 48.717948717948715%;
+	width: 44.717948717948715%;
 }
 
 .one-third,
@@ -611,7 +691,17 @@ Common Classes
 	height: 48px;
 	width: 48px;
 }
+#reply-title {
+	padding:10px;
+	}
+#commentform > p.comment-form-comment > label {
+	font-weight:700;
 
+	}
+.entry-footer,
+.comment-respond {
+	padding:40px;
+	}
 .search-form input[type="submit"] {
 	border: 0;
 	clip: rect(0, 0, 0, 0);
@@ -733,7 +823,7 @@ Widgets
 --------------------------------------------- */
 
 .entry-title {
-	font-size: 30px;
+	font-size: 42px;
 	line-height: 1;
 }
 
@@ -749,7 +839,7 @@ Widgets
 }
 
 .entry-title a:hover {
-	color: #0ebfe9;
+	color: #B7AEAE;
 }
 
 .widget-title {
@@ -830,13 +920,12 @@ Site Header
 /* Custom header */
 
 .header-image .title-area {
- 	padding: 0;
-	position: relative;
-  z-index: 5;
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1140px;
   	margin-bottom: -150px; /* height of logo */
+    padding: 0;
+    position: relative;
+    z-index: 500;
+    width: 150px;
+    left: 0;
 }
 
 .header-image .site-title a {
@@ -846,7 +935,7 @@ Site Header
 	max-width: 320px;
     position: relative;
 	text-indent: -9999px;
-	top: -48px;
+	top: -43px;
 	width: 150px;
 }
 
@@ -869,7 +958,7 @@ Site Header
 
 .header-widget-area {
 	/*width: 100%;*/
-	
+
 }
 
 .hello-widget-area {
@@ -877,6 +966,14 @@ Site Header
 	padding: 12px 0;
 	position: relative;
     z-index: 0;
+}
+
+div#lisa-img-03 {
+    float: left;
+    width: 25%;
+    margin-right: 4.564102564102564%;
+	margin-bottom:120px;
+    min-width: 150px;
 }
 
 section#text-3 {
@@ -887,7 +984,7 @@ section#text-3 {
     padding-left: 200px;
 	position: relative;
 	text-align: right;
-	    width: 90%;
+	width: 90%;
 	z-index: 20;
 }
 
@@ -1087,7 +1184,7 @@ Site Navigation
 
 #responsive-menu-icon::before {
 	color: #333;
-	content: "Menu \f333";
+	content: "MENU \f333";
 	font: normal 24px/1 'dashicons';
 	margin: 0 auto;
 }
@@ -1095,10 +1192,10 @@ Site Navigation
 /* Content
 ----------------------------------------------*/
 .callout {
-  background-color: rgba(255,255,255,0.6); 
+  background-color: rgba(255,255,255,0.6);
   border: 1px solid rgb(183, 174, 174); /* mauve */
   clear: both;
-	display: block;
+  display: block;
   margin: -40px auto 40px;
   max-width: 1140px;
   padding: 26px;
@@ -1126,12 +1223,87 @@ Site Navigation
 }
 
 div.divider {
-	width: 100%;
-	height: 16px;
+	width: 90%;
+	margin:auto;
+	/*height: 16px;*/
 	clear: both;
-  background: rgb(210, 207, 207); /* mauve light */
+	border-bottom: 4px solid rgb(210, 207, 207); /* mauve light */
 }
 
+#slider-01,
+#text-01 {
+	margin-bottom: 6%; /* Slider  or text column, whichever is taller, should push callout*/
+}
+
+#subhed-01 img,
+#subhed-02 img,
+#subhed-03 img {
+	float: right;
+}
+#subhed-01 img, /* lustre jewels */
+#subhed-03 img { /* services */
+    margin-bottom: -40px;
+    width: 570px;
+}
+#subhed-02 img { /* about lisa */
+    width: 350px;
+}
+#subhed-04 img { /* contact */
+    width: 284px;
+}
+
+#approach-and-custom h3:nth-of-type(2n) { /*custom subhed*/
+  margin-top: 0;
+}
+
+#approach-and-custom {
+	clear: none;
+}
+
+#pink-ring-img-02 {
+	max-width: 300px;
+}
+
+#gold-bracelet-img-02 {
+	display: block;
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+#sourcing-and-events h3:nth-of-type(1n) { /*sourcing subhed*/
+  margin-top: -17px;
+}
+#sourcing-and-events h3:nth-of-type(2n) { /*events subhed*/
+  margin-top: -22px;
+}
+
+#aqua-earrings-img-02 {
+	max-width: 300px;
+    margin: -20px auto 0;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+
+#divider-2-3 {
+	position: relative;
+    top: -150px;
+    z-index: 0;
+    margin-bottom: -126px;
+}
+
+#about-text-03 {
+	margin-bottom: 40px;
+}
+
+#subhed-04 {
+	margin-top: 40px;
+}
+
+#contact-div img {
+	position: relative;
+    z-index: 10;
+}
 
 /*
 Sidebar
@@ -1153,7 +1325,7 @@ Sidebar
 }
 
 .sidebar .widget {
-	
+
 }
 
 .sidebar .tagcloud a {
@@ -1175,10 +1347,11 @@ Sidebar
 
 /* Contact Form */
 #contact-div {
-    width: 100%;
+    width: 90%;
     max-width: 1140px;
-		margin: 0 5%;
+		margin: 0 auto;
 }
+
 #contact-div h3 {
 	text-transform: none;
 }
@@ -1190,6 +1363,13 @@ Sidebar
 	font-weight: 600;
 	text-align: center;
 	margin: 0;
+}
+#contact-div .form-info a {
+	font-weight: 600;
+	color: rgb(102, 86, 59);
+}
+#contact-div .form-info a:hover {
+	color: rgb(183, 174, 174);
 }
 
 .vfb-fieldset {
@@ -1206,7 +1386,7 @@ Sidebar
 	margin-bottom: 16px;
 }
 .vfb-text {
-	color: #999;
+	color: #333;
 }
 
 label.vfb-desc {
@@ -1230,6 +1410,23 @@ input[type="email"] {
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #999;
+}
+
+/* WooCommerce
+--------------------------------------------- */
+
+/* shop */
+.woocommerce ul.products li.product a img {
+max-width:100%;
+max-height:400px;
+height: auto;
+width:auto !important;
+}
+
+/* single product */
+.woocommerce div.product div.images img {
+    max-width: 400px;
+    max-height: 400px;
 }
 
 /* Genesis eNews Extended in sidebar
@@ -1268,7 +1465,7 @@ input[type="email"] {
 	/*padding: 30px;*/
 /*	background-color:#333;
 	color:#fff;
-*/	
+*/
 }
 
 .sidebar .enews-widget .widget-title {
@@ -1278,17 +1475,38 @@ input[type="email"] {
 .enews .screenread {
     height: auto !important;
     position: relative !important;
-    left: 0 !important; 
+    left: 0 !important;
     /* overflow: hidden; */
     /* position: absolute; */
-    top: 0 !important; 
+    top: 0 !important;
     width: 100% !important;
     background: #fff !important;
     color: rgb(102, 86, 59) !important;
     display: block !important;
 }
 
-/* Soliloquy Slider */
+input#subbutton {
+    margin-top: 5%;
+}
+
+/* we don't want enews placeholder; works on my 3 browsers */
+.enews ::-webkit-input-placeholder {
+   display: red; opacity: 0;
+}
+
+.enews :-moz-placeholder { /* Firefox 18- */
+   display: red; opacity: 0;
+}
+
+.enews ::-moz-placeholder {  /* Firefox 19+ */
+   display: red; opacity: 0;
+}
+
+.enews :-ms-input-placeholder {
+   display: red; opacity: 0;
+}
+
+/* Soliloquy Slider ----------------------------------------------------------------*/
 
 .soliloquy-container .soliloquy-pager {
 	display: none;
@@ -1397,26 +1615,25 @@ Site Footer
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
+@media only screen and (max-width: 1366px) {
+  .woocommerce .site-inner {
+  	padding:0 6%;
+	}
+}
+
 @media only screen and (max-width: 1179px) {
 
-/*	.site-header .widget-area {
-		width: 620px;
-	}
-*/
-	.content {
-		
-	}
-
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3 {
-		width: 280px;
-	}
-
+  .footer-widgets-1,
+  .footer-widgets-2,
+  .footer-widgets-3 {
+    width: 280px;
+  }
+  .full-width-content .content {
+    padding:5%;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
-
 
 	.content,
 	.footer-widgets-1,
@@ -1436,7 +1653,7 @@ Media Queries
 	}
 
 	.site-inner {
-		padding: 0px 0;
+		padding: 0 0;
 	}
 
 	.post-type-archive-portfolio .entry,
@@ -1457,11 +1674,7 @@ Media Queries
 		margin: 0 auto;
 		width: 50%;
 	}
-	
-/*	.site-header .widget-area {
-		padding: 0 5%;
-	}
-*/
+
 	.site-description {
 		font-size: 30px;
 	}
@@ -1487,12 +1700,16 @@ Media Queries
 	}
 
 	.minimum-landing .site-inner {
-	
+
 	}
-	
+
 	.minimum-landing .site-container {
 		padding: 0;
 	}
+
+  .woocommerce .site-inner {
+    padding: 0 7%;
+  }
 
 	.footer-widgets .widget,
 	/*.nav-primary .wrap,*/
@@ -1508,7 +1725,75 @@ Media Queries
 
 }
 
+@media only screen and (max-width: 940px) {
+	#subhed-01 img, /* lustre jewels */
+	#subhed-03 img { /* services */
+	width: 420px;
+	}
+	#subhed-02 img { /* about lisa */
+	width: 262px;
+	}
+	#subhed-04 img { /* contact */
+	width: 213px;
+	}
+}
+
 @media only screen and (max-width: 768px) {
+	.full-width-content .content {
+	padding:5%;
+	}
+	.callout p,
+	.callout#dictionary {
+		font-size: 20px;
+	}
+
+	#subhed-01 img,
+	#subhed-03 img {
+	    margin-bottom: -28px; /**/
+	    width: 63%; /**/
+	    min-width: 270px;
+	}
+	#subhed-02 img {
+	    width: 48%; /**/
+	    min-width: 160px;
+	}
+	#subhed-04 img {
+	    width: 38%; /**/
+	    min-width: 170px;
+	}
+
+	#approach-and-custom {
+	    margin-top: -25%; /**/
+	}
+
+	#pink-ring-img-02 {
+	    width: 28%;
+	    position: relative;
+	    z-index: 10;
+	    min-width: 78px;
+	}
+
+  .woocommerce .site-inner {
+    padding: 0 8%;
+  }
+
+	#gold-bracelet-img-02 {
+		width: 44%; /**/
+	}
+
+	#aqua-earrings-img-02 {
+	    width: 35%;
+	}
+
+	#divider-2-3 {
+	    top: 0; /**/
+	}
+
+	section#section-3 { /**/
+		margin-top: 166px;	/**/
+	}
+
+/**************************************/
 
 	.site-header {
 		padding-bottom: 10px;
@@ -1527,6 +1812,16 @@ Media Queries
 	.genesis-nav-menu a {
 		padding: 20px 10px;
 	}
+
+	.genesis-nav-menu .menu-item {
+    display: inline;
+	}
+	.genesis-nav-menu > .menu-item > a {
+		font-weight: 600;
+	    text-align: right;
+	    padding: 4px 0;
+	    margin: 2px 0;
+    }
 
 	.site-footer .nav-secondary a {
 		margin: 0 10px;
@@ -1562,34 +1857,89 @@ Media Queries
 	.three-sixths,
 	.two-fourths,
 	.two-sixths,
-	.two-thirds {
+	.two-thirds,
+	.five-twelfths { /**/
 		margin: 0;
 		width: 100%;
 	}
 
 	input,
-select,
-textarea {
-	width: 100%;
-	margin:1%;
-}
+	select,
+	textarea {
+		width: 100%;
+		/*margin:1%;*/
+	}
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-.button,
-.entry-content .button {
-	width: 100% !important;
-	margin:1%;
-		}
-
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	.button,
+	.entry-content .button {
+		width: 100% !important;
+		/*margin:1%;*/
+	}
+	.single-blog-image {
+	max-width:30%;
+	}
 }
 
 @media only screen and (max-width: 600px) {
-
+	.site-inner {
+	padding:0 5%;
+	}
 	.logo {
-	padding:0px 40px;
+		padding:0 40px;
+	}
+
+	section#text-3 {
+		font-size: 15px;
+	}
+	.blogImage {
+	max-width:100%;
+	}
+}
+@media only screen and (max-width: 550px) {
+
+	section#text-3 { /* hello bar */
+		display: none;
+	}
+	.hello-widget-area {
+		height: 60px;
+	}
+	#approach-and-custom {
+	    margin-top: -22%;
+	}
+	#subhed-03 img {
+	    margin-bottom: -19px;
+	}
+	#subhed-04 {
+		    margin-bottom: 9px;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	#section-1 {
+	    margin-top: 40px;
+	}
+	.back {
+	font-weight:700;
+	width:100%;
+	text-align:center;
+	}
+}
+
+@media only screen and (max-width: 370px) {
+	#section-1 {
+	    margin-top: 60px;
+	}
+	div#lisa-img-03 {
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	div#lisa-img-03 img {
+    max-width: 100%;
+    margin: 0;
 	}
 }
 
@@ -1598,5 +1948,4 @@ input[type="submit"],
 	.header-image .site-header .title-area .site-title a {
 		background-size: contain !important;
 	}
-
 }
